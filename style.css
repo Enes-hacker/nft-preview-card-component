@@ -36,11 +36,13 @@ p {
 }
 
 .user-name {
-  color: var(--clr-neutral-white);
+  color: var(--clr-primary-blue);
 }
 
-.user-name span {
-  color: var(--clr-primary-blue);
+
+
+.author{
+    color: var(--clr-neutral-white);
 }
 
 .text {
