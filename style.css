@@ -1,0 +1,133 @@
+@import url("./base.css");
+
+html {
+  background: var(--clr-neutral-main-950);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+}
+
+h1 {
+  color: var(--clr-neutral-white);
+}
+
+p {
+  color: var(--clr-primary-blue);
+  font-size: 16px;
+}
+
+.card-wrapper {
+  max-width: 350px;
+  border-radius: 15px;
+  background: var(--clr-neutral-card-900);
+  padding: 24px;
+}
+
+.nft-image {
+  border-radius: 8px;
+}
+
+/*card content*/
+.card-content {
+  margin-top: 24px;
+}
+
+.user-name {
+  color: var(--clr-neutral-white);
+}
+
+.user-name span {
+  color: var(--clr-primary-blue);
+}
+
+.text {
+  margin-top: 16px;
+}
+
+.price,
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 7px;
+}
+
+.price p {
+  color: var(--clr-primary-cyan);
+}
+
+.etherium {
+  display: flex;
+  justify-content: space-between;
+  max-width: 301px;
+}
+
+.etherium p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.divider {
+  max-width: 302px;
+  border: 1px solid var(--clr-neutral-line-800);
+  margin-top: 24px;
+}
+
+/*card content*/
+
+/*user info*/
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.avatar {
+  border: 1px solid var(--clr-neutral-white);
+  border-radius: 50%;
+}
+
+/*user info*/
+
+/*hover effects*/
+.card-content h1:hover,
+.author:hover {
+  cursor: pointer;
+  color: var(--clr-primary-cyan);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: hsla(178, 100%, 50%, 0.5);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*hover effect*/
+
+/*media query*/
+@media (max-width: 30rem) {
+  .card-wrapper {
+    margin-inline: 24px;
+    max-width: 327px;
+  }
+}
